@@ -4,10 +4,10 @@
     <title>2023-2025年CVML实验室科研成果展示</title>
     <url>/2024/12/11/%E7%A7%91%E7%A0%94%E5%BF%AB%E8%AE%AF/</url>
     <content><![CDATA[<div class="note primary"><h2
-id="iccv2023-best-paper-when-noisy-labels-meet-long-tail-dilemmas-a-representation-calibration-method"><a
+id="iccv2023-best-paper-nomination-when-noisy-labels-meet-long-tail-dilemmas-a-representation-calibration-method"><a
 href="https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_When_Noisy_Labels_Meet_Long_Tail_Dilemmas_A_Representation_Calibration_ICCV_2023_paper.html?trk=public_post_comment-text">ICCV2023
-Best Paper: When Noisy Labels Meet Long Tail Dilemmas: A Representation
-Calibration Method</a></h2>
+Best Paper Nomination: When Noisy Labels Meet Long Tail Dilemmas: A
+Representation Calibration Method</a></h2>
 <h3 id="author-张曼怡">Author: 张曼怡</h3>
 <h3 id="abstract">Abstract</h3>
 <p>Real-world large-scale datasets are both noisily labeled and
@@ -35,6 +35,49 @@ on multiple benchmarks justify our claims and confirm the superiority of
 the proposed method.</p>
 <p><img
 src="https://raw.githubusercontent.com/THU-CVML/thu-cvml.github.io/refs/heads/main/images/RCAL.png" /></p>
+</div>
+<div class="note primary"><h2
+id="cvpr2025-comrope-scalable-and-robust-rotary-position-embedding-parameterized-by-trainable-commuting-angle-matrices"><a
+href="">CVPR2025: ComRoPE: Scalable and Robust Rotary Position Embedding
+Parameterized by Trainable Commuting Angle Matrices</a></h2>
+<h3 id="author-余豪">Author: 余豪</h3>
+<h3 id="abstract">Abstract</h3>
+</div>
+<div class="note primary"><h2
+id="cvpr2025-weakly-supervised-temporal-action-localization-via-dual-prior-collaborative-learning-guided-by-multimodal-large-language-models"><a
+href="">CVPR2025: Weakly Supervised Temporal Action Localization via
+Dual-Prior Collaborative Learning Guided by Multimodal Large Language
+Models</a></h2>
+<h3 id="author-张权">Author: 张权</h3>
+<h3 id="abstract">Abstract</h3>
+</div>
+<div class="note primary"><h2
+id="cvpr2025-unlocking-tuning-free-few-shot-adaptability-in-visual-foundation-models-by-recycling-pre-tuned-loras"><a
+href="https://arxiv.org/abs/2412.02220">CVPR2025: Unlocking Tuning-Free
+Few-Shot Adaptability in Visual Foundation Models by Recycling Pre-Tuned
+LoRAs</a></h2>
+<h3 id="author-胡梓轩">Author: 胡梓轩</h3>
+<h3 id="abstract">Abstract</h3>
+<p>Large Language Models (LLMs) such as ChatGPT demonstrate strong
+few-shot adaptability without requiring fine-tuning, positioning them
+ideal for data-limited and real-time applications. However, this
+adaptability has not yet been replicated in current Visual Foundation
+Models (VFMs), which require explicit fine-tuning with sufficient tuning
+data. Besides, the pretraining-finetuning paradigm has led to the surge
+of numerous task-specific modular components, such as Low-Rank
+Adaptation (LoRA). For the first time, we explore the potential of
+reusing diverse pre-tuned LoRAs without accessing their original
+training data, to achieve tuning-free few-shot adaptation in VFMs. Our
+framework, LoRA Recycle, distills a meta-LoRA from diverse pre-tuned
+LoRAs with a meta-learning objective, using surrogate data generated
+inversely from pre-tuned LoRAs themselves. The VFM, once equipped with
+the meta-LoRA, is empowered to solve new few-shot tasks in a single
+forward pass, akin to the in-context learning of LLMs. Additionally, we
+incorporate a double-efficient mechanism tailored to our framework,
+significantly accelerating the meta-training process while maintaining
+or even improving performance. Extensive experiments across various
+few-shot classification benchmarks across both in- and cross-domain
+scenarios demonstrate the superiority of our framework.</p>
 </div>
 <div class="note primary"><h2
 id="iclr2025-chartmoe-mixture-of-diversely-aligned-expert-connector-for-advanced-chart-understanding"><a
