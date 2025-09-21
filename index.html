@@ -221,7 +221,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2025-07-05 16:11:26" itemprop="dateModified" datetime="2025-07-05T16:11:26+08:00">2025-07-05</time>
+      <time title="Modified: 2025-09-21 21:18:57" itemprop="dateModified" datetime="2025-09-21T21:18:57+08:00">2025-09-21</time>
     </span>
 
   
@@ -235,37 +235,164 @@
     
     <div class="post-body" itemprop="articleBody">
           <div class="note primary"><h2
-id="iccv2023-best-paper-candidate-when-noisy-labels-meet-long-tail-dilemmas-a-representation-calibration-method"><a
-target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_When_Noisy_Labels_Meet_Long_Tail_Dilemmas_A_Representation_Calibration_ICCV_2023_paper.html?trk=public_post_comment-text">ICCV2023
-Best Paper Candidate: When Noisy Labels Meet Long Tail Dilemmas: A
-Representation Calibration Method</a></h2>
-<h3 id="author-张曼怡">Author: 张曼怡</h3>
+id="neurips2026-towards-implicit-aggregation-robust-image-representation-for-place-recognition-in-the-transformer-era"><a
+href="">NeurIPS2026: Towards Implicit Aggregation: Robust Image
+Representation for Place Recognition in the Transformer Era</a></h2>
+<h3 id="author-卢锋">Author: 卢锋</h3>
 <h3 id="abstract">Abstract</h3>
-<p>Real-world large-scale datasets are both noisily labeled and
-class-imbalanced. The issues seriously hurt the generalization of
-trained models. It is hence significant to address the simultaneous
-incorrect labeling and class-imbalance, i.e., the problem of learning
-with noisy labels on long-tailed data. Previous works develop several
-methods for the problem. However, they always rely on strong assumptions
-that are invalid or hard to be checked in practice. In this paper, to
-handle the problem and address the limitations of prior works, we
-propose a representation calibration method RCAL. Specifically, RCAL
-works with the representations extracted by unsupervised contrastive
-learning. We assume that without incorrect labeling and class imbalance,
-the representations of instances in each class conform to a multivariate
-Gaussian distribution, which is much milder and easier to be checked.
-Based on the assumption, we recover underlying representation
-distributions from polluted ones resulting from mislabeled and
-class-imbalanced data. Additional data points are then sampled from the
-recovered distributions to help generalization. Moreover, during
-classifier training, representation learning takes advantage of
-representation robustness brought by contrastive learning, which further
-improves the classifier performance. We derive theoretical results to
-discuss the effectiveness of our representation calibration. Experiments
-on multiple benchmarks justify our claims and confirm the superiority of
-the proposed method.</p>
-<p><img
-src="https://raw.githubusercontent.com/THU-CVML/thu-cvml.github.io/refs/heads/main/images/RCAL.png" /></p>
+<p>Visual place recognition (VPR) is typically regarded as a specific
+image retrieval task, whose core lies in representing images as global
+descriptors. Over the past decade, dominant VPR methods (e.g., NetVLAD)
+have followed a paradigm that first extracts the patch features/tokens
+of the input image using a backbone, and then aggregates these patch
+features into a global descriptor via an aggregator. This
+backbone-plus-aggregator paradigm has achieved overwhelming dominance in
+the CNN era and remains extensively used in transformer-based models. In
+this paper, however, we argue that a dedicated aggregator is not
+necessary in the transformer era, that is, we can obtain robust global
+descriptors only with the backbone. Specifically, we introduce some
+learnable aggregation tokens, which are prepended to the patch tokens
+before a particular transformer block. All these tokens will be jointly
+processed and interact globally via the intrinsic self-attention
+mechanism, implicitly aggregating useful information within the patch
+tokens to the aggregation tokens. Finally, we only take these
+aggregation tokens from the last output tokens and concatenate them as
+the global representation. Although implicit aggregation can provide
+robust global descriptors in an extremely simple manner, where and how
+to insert additional tokens, as well as the initialization of tokens,
+remains an open issue worthy of further exploration. To this end, we
+also propose the optimal token insertion strategy and token
+initialization method derived from empirical studies. Experiments show
+that our method outperforms state-of-the-art methods on several VPR
+datasets with higher efficiency and ranks 1st on the MSLS challenge
+leaderboard.</p>
+</div>
+<div class="note primary"><h2
+id="neurips2026-nadro-leveraging-dual-reward-strategies-for-llms-training-on-noisy-data"><a
+href="">NeurIPS2026: NaDRO: Leveraging Dual-Reward Strategies for LLMs
+Training on Noisy Data</a></h2>
+<h3 id="author-钱浩龙">Author: 钱浩龙</h3>
+<h3 id="abstract">Abstract</h3>
+</div>
+<div class="note primary"><h2
+id="neurips2026-towards-robust-uncertainty-calibration-for-composed-image-retrieval"><a
+href="">NeurIPS2026: Towards Robust Uncertainty Calibration for Composed
+Image Retrieval</a></h2>
+<h3 id="author-王依凡">Author: 王依凡</h3>
+<h3 id="abstract">Abstract</h3>
+<p>The interactive task of composed image retrieval aims to retrieve the
+most relevant images with the bi-modal query, consisting of a reference
+image and a modification sentence. Despite significant efforts to bridge
+the heterogeneous gap within the bi-modal query and leverage contrastive
+learning to reduce the disparity between positive and negative triplets,
+prior methods often fail to ensure reliable matching due to aleatoric
+and epistemic uncertainty. Specifically, the aleatoric uncertainty stems
+from underlying semantic correlations within candidate instances and
+annotation noise, and the epistemic uncertainty is usually caused by
+overconfidence in dominant semantic categories. In this paper, we
+propose Robust UNcertainty Calibration (RUNC) to quantify the
+uncertainty and calibrate the imbalanced semantic distribution. To
+mitigate semantic ambiguity in similarity distribution between fusion
+queries and targets, RUNC maximizes the matching evidence by utilizing a
+high-order conjugate prior distribution to fit the semantic covariances
+in candidate samples. With the estimated uncertainty coefficient of each
+candidate, the target distribution is calibrated to encourage balanced
+semantic alignment. Additionally, we minimize the ambiguity in the
+fusion evidence when forming the unified query by incorporating
+orthogonal constraints on explicit textual embeddings and implicit
+queries, to reduce the representation redundancy. Extensive experiments
+and ablation analysis on benchmark datasets FashionIQ and CIRR verify
+the robustness of RUNC in predicting reliable retrieval results from a
+large image gallery.</p>
+</div>
+<div class="note primary"><h2
+id="neurips2026-scout-teaching-pre-trained-language-models-to-enhance-reasoning-via-flow-chain-of-thought"><a
+target="_blank" rel="noopener" href="https://arxiv.org/abs/2505.24181">NeurIPS2026: SCOUT: Teaching
+Pre-trained Language Models to Enhance Reasoning via Flow
+Chain-of-Thought</a></h2>
+<h3 id="author-李广昊">Author: 李广昊</h3>
+<h3 id="abstract">Abstract</h3>
+<p>Chain of Thought (CoT) prompting improves the reasoning performance
+of large language models (LLMs) by encouraging step by step thinking.
+However, CoT-based methods depend on intermediate reasoning steps, which
+limits scalability and generalization. Recent work explores recursive
+reasoning, where LLMs reuse internal layers across iterations to refine
+latent representations without explicit CoT supervision. While
+promising, these approaches often require costly pretraining and lack a
+principled framework for how reasoning should evolve across iterations.
+We address this gap by introducing Flow Chain of Thought (Flow CoT), a
+reasoning paradigm that models recursive inference as a progressive
+trajectory of latent cognitive states. Flow CoT frames each iteration as
+a distinct cognitive stage deepening reasoning across iterations without
+relying on manual supervision. To realize this, we propose SCOUT
+(Stepwise Cognitive Optimization Using Teachers), a lightweight fine
+tuning framework that enables Flow CoT style reasoning without the need
+for pretraining. SCOUT uses progressive distillation to align each
+iteration with a teacher of appropriate capacity, and a cross attention
+based retrospective module that integrates outputs from previous
+iterations while preserving the models original computation flow.
+Experiments across eight reasoning benchmarks show that SCOUT
+consistently improves both accuracy and explanation quality, achieving
+up to 1.8% gains under fine tuning. Qualitative analyses further reveal
+that SCOUT enables progressively deeper reasoning across iterations
+refining both belief formation and explanation granularity. These
+results not only validate the effectiveness of SCOUT, but also
+demonstrate the practical viability of Flow CoT as a scalable framework
+for enhancing reasoning in LLMs.</p>
+</div>
+<div class="note primary"><h2
+id="neurips2026-a-simple-linear-patch-revives-layer-pruned-large-language-models"><a
+target="_blank" rel="noopener" href="https://arxiv.org/abs/2505.24680">NeurIPS2026: A Simple Linear
+Patch Revives Layer-Pruned Large Language Models</a></h2>
+<h3 id="author-陈新睿">Author: 陈新睿</h3>
+<h3 id="abstract">Abstract</h3>
+<p>Layer pruning has become a popular technique for compressing large
+language models (LLMs) due to its simplicity. However, existing layer
+pruning methods often suffer from significant performance drops. We
+identify that this degradation stems from the mismatch of activation
+magnitudes across layers and tokens at the pruning interface. To address
+this, we propose LinearPatch, a simple plug-and-play technique to revive
+the layer-pruned LLMs. The proposed method adopts Hadamard
+transformation to suppress massive outliers in particular tokens, and
+channel-wise scaling to align the activation magnitudes. These
+operations can be fused into a single matrix, which functions as a patch
+to bridge the pruning interface with negligible inference overhead.
+LinearPatch retains up to 94.15% performance of the original model when
+pruning 5 layers of LLaMA-3-8B on the question answering benchmark,
+surpassing existing state-of-the-art methods by 4%. In addition, the
+patch matrix can be further optimized with memory efficient offline
+knowledge distillation. With only 5K samples, the retained performance
+of LinearPatch can be further boosted to 95.16% within 30 minutes on a
+single computing card.</p>
+</div>
+<div class="note primary"><h2
+id="neurips2026-safe-sora-safe-text-to-video-generation-via-graphical-watermarking"><a
+target="_blank" rel="noopener" href="https://arxiv.org/abs/2505.12667">NeurIPS2026: Safe-Sora: Safe
+Text-to-Video Generation via Graphical Watermarking</a></h2>
+<h3 id="author-苏梓瀚">Author: 苏梓瀚</h3>
+<h3 id="abstract">Abstract</h3>
+<p>The explosive growth of generative video models has amplified the
+demand for reliable copyright preservation of AI-generated content.
+Despite its popularity in image synthesis, invisible generative
+watermarking remains largely underexplored in video generation. To
+address this gap, we propose Safe-Sora, the first framework to embed
+graphical watermarks directly into the video generation process.
+Motivated by the observation that watermarking performance is closely
+tied to the visual similarity between the watermark and cover content,
+we introduce a hierarchical coarse-to-fine adaptive matching mechanism.
+Specifically, the watermark image is divided into patches, each assigned
+to the most visually similar video frame, and further localized to the
+optimal spatial region for seamless embedding. To enable spatiotemporal
+fusion of watermark patches across video frames, we develop a 3D wavelet
+transform-enhanced Mamba architecture with a novel spatiotemporal local
+scanning strategy, effectively modeling long-range dependencies during
+watermark embedding and retrieval. To the best of our knowledge, this is
+the first attempt to apply state space models to watermarking, opening
+new avenues for efficient and robust watermark protection. Extensive
+experiments demonstrate that Safe-Sora achieves state-of-the-art
+performance in terms of video quality, watermark fidelity, and
+robustness, which is largely attributed to our proposals. We will
+release our code upon publication.</p>
 </div>
 <div class="note primary"><h2
 id="iccv2025-vpr-cloak-a-first-look-at-privacy-cloak-against-visual-place-recognition"><a
@@ -1976,6 +2103,37 @@ for contrastive learning to induce discriminative representations robust
 to various types of label noise. Extensive experimental results on
 several standard benchmarks and real-world datasets indicate the
 superiority of ACL, especially in extremely noisy scenarios.</p>
+</div>
+<div class="note primary"><h2
+id="iccv2023-best-paper-candidate-when-noisy-labels-meet-long-tail-dilemmas-a-representation-calibration-method"><a
+target="_blank" rel="noopener" href="https://openaccess.thecvf.com/content/ICCV2023/html/Zhang_When_Noisy_Labels_Meet_Long_Tail_Dilemmas_A_Representation_Calibration_ICCV_2023_paper.html?trk=public_post_comment-text">ICCV2023
+Best Paper Candidate: When Noisy Labels Meet Long Tail Dilemmas: A
+Representation Calibration Method</a></h2>
+<h3 id="author-张曼怡">Author: 张曼怡</h3>
+<h3 id="abstract">Abstract</h3>
+<p>Real-world large-scale datasets are both noisily labeled and
+class-imbalanced. The issues seriously hurt the generalization of
+trained models. It is hence significant to address the simultaneous
+incorrect labeling and class-imbalance, i.e., the problem of learning
+with noisy labels on long-tailed data. Previous works develop several
+methods for the problem. However, they always rely on strong assumptions
+that are invalid or hard to be checked in practice. In this paper, to
+handle the problem and address the limitations of prior works, we
+propose a representation calibration method RCAL. Specifically, RCAL
+works with the representations extracted by unsupervised contrastive
+learning. We assume that without incorrect labeling and class imbalance,
+the representations of instances in each class conform to a multivariate
+Gaussian distribution, which is much milder and easier to be checked.
+Based on the assumption, we recover underlying representation
+distributions from polluted ones resulting from mislabeled and
+class-imbalanced data. Additional data points are then sampled from the
+recovered distributions to help generalization. Moreover, during
+classifier training, representation learning takes advantage of
+representation robustness brought by contrastive learning, which further
+improves the classifier performance. We derive theoretical results to
+discuss the effectiveness of our representation calibration. Experiments
+on multiple benchmarks justify our claims and confirm the superiority of
+the proposed method.</p>
 </div>
 <div class="note primary"><h2
 id="iccv2023-hiface-high-fidelity-3d-face-reconstruction-by-learning-static-and-dynamic-details"><a
