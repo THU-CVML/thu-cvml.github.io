@@ -4,6 +4,106 @@
     <title>2023-2025年CVML实验室科研成果展示</title>
     <url>/2024/12/11/%E7%A7%91%E7%A0%94%E5%BF%AB%E8%AE%AF/</url>
     <content><![CDATA[<div class="note primary"><h2
+id="tpami-accelerating-zero-shot-nas-with-feature-map-based-proxy-and-operation-scoring-function"><a
+href="https://ieeexplore.ieee.org/abstract/document/11084843">TPAMI:
+Accelerating Zero-Shot NAS With Feature Map-Based Proxy and Operation
+Scoring Function</a></h2>
+<h3 id="author-蒋唐宇">Author: 蒋唐宇</h3>
+<h3 id="abstract">Abstract</h3>
+<p>Neural Architecture Search (NAS) has been extensively studied due to
+its ability in automatic architecture engineering. Existing NAS methods
+rely heavily on the gradients and data labels, which either incur
+immense computational costs or suffer from discretization discrepancy
+due to the supernet structure. Moreover, the majority of them are
+limited in generating diverse architectures. To alleviate these issues,
+in this paper, we propose a novel zero-cost proxy called MeCo based on
+the Pearson correlation matrix of the feature maps. Unlike the previous
+work, the computation of MeCo as well as its variant MeCoopt requires
+only one random data for a single forward pass. Based on the proposed
+zero-cost proxy, we further craft a new zero-shot NAS scheme called
+FLASH, which harnesses a new proxy-based operation scoring function and
+a greedy heuristic. Compared to the existing methods, FLASH is highly
+efficient and can construct diverse model architectures instead of
+repeated cells. We design comprehensive experiments and extensively
+evaluate our designs on multiple benchmarks and datasets. The
+experimental results show that our method is one to six orders of
+magnitudes more efficient than the state-of-the-art baselines with the
+highest model accuracy.</p>
+</div>
+<div class="note primary"><h2
+id="aaai2026-prunecomp-free-lunch-for-layer-prunedllms-via-iterative-pruning-with-magnitudecompensation"><a
+href="https://arxiv.org/abs/2507.18212">AAAI2026: Prune&amp;Comp: Free
+Lunch for Layer-PrunedLLMs via Iterative Pruning with
+MagnitudeCompensation</a></h2>
+<h3 id="author-陈新睿">Author: 陈新睿</h3>
+<h3 id="abstract">Abstract</h3>
+<p>Layer pruning has emerged as a promising technique for compressing
+large language models (LLMs) while achieving acceleration proportional
+to the pruning ratio. In this work, we identify that removing any layer
+induces a significant magnitude gap in hidden states, resulting in
+substantial performance degradation. To address this issue, we propose
+Prune&amp;Comp, a novel plug-and-play layer pruning scheme that
+leverages magnitude compensation to mitigate such gaps in a
+training-free manner. Specifically, we first estimate the magnitude gap
+caused by layer removal and then eliminate this gap by rescaling the
+remaining weights offline, with zero runtime overhead incurred. We
+further demonstrate the advantages of Prune&amp;Comp through an
+iterative pruning strategy. When integrated with an iterative
+prune-and-compensate loop, Prune&amp;Comp consistently enhances existing
+layer pruning metrics. For instance, when 5 layers of LLaMA-3-8B are
+pruned using the prevalent block influence metric, Prune&amp;Comp nearly
+halves the perplexity and retains 93.19% of the original model's
+question-answering performance, outperforming the baseline by 4.01%.</p>
+</div>
+<div class="note primary"><h2
+id="aaai2026-m3time-llm-enhanced-multi-modal-multi-scale-and-multi-frequency-multivariate-timeseries-forecasting"><a
+href="">AAAI2026: M3Time: LLM-Enhanced Multi-Modal, Multi-Scale, and
+Multi-Frequency Multivariate TimeSeries Forecasting</a></h2>
+<h3 id="author-贾书凝">Author: 贾书凝</h3>
+<h3 id="abstract">Abstract</h3>
+</div>
+<div class="note primary"><h2
+id="tpami-selavpr-towards-seamless-adaptation-of-foundation-models-for-efficient-place-recognition"><a
+href="https://arxiv.org/abs/2502.16601">TPAMI: SelaVPR++: Towards
+Seamless Adaptation of Foundation Models for Efficient Place
+Recognition</a></h2>
+<h3 id="author-卢锋">Author: 卢锋</h3>
+<h3 id="abstract">Abstract</h3>
+<p>Abstract—Recent studies show that the visual place recognition (VPR)
+method using pre-trained visual foundation models can achieve promising
+performance. In our previous work, we propose a novel method to realize
+seamless adaptation of foundation models to VPR (SelaVPR). This method
+can produce both global and local features that focus on discriminative
+landmarks to recognize places for two-stage VPR by a parameterefficient
+adaptation approach. Although SelaVPR has achieved competitive results,
+we argue that the previous adaptation is inefficient in training time
+and GPU memory usage, and the reranking paradigm is also costly in
+retrieval latency and storage usage. In pursuit of higher efficiency and
+better performance, we propose an extension of the SelaVPR, called
+SelaVPR++. Concretely, we first design a parameter-, time-, and
+memory-efficient adaptation method that uses lightweight multi-scale
+convolution (MultiConv) adapters to refine intermediate features from
+the frozen foundation backbone. This adaptation method does not
+back-propagate gradients through the backbone during training, and the
+MultiConv adapter facilitates feature interactions along the spatial
+axes and introduces proper local priors, thus achieving higher
+efficiency and better performance. Moreover, we propose an innovative
+re-ranking paradigm for more efficient VPR. Instead of relying on local
+features for re-ranking, which incurs huge overhead in latency and
+storage, we employ compact binary features for initial retrieval and
+robust floating-point (global) features for re-ranking. To obtain such
+binary features, we propose a similarity-constrained deep hashing
+method, which can be easily integrated into the VPR pipeline. Finally,
+we improve our training strategy and unify the training protocol of
+several common training datasets to merge them for better training of
+VPR models. Extensive experiments show that SelaVPR++ is highly
+efficient in training time, GPU memory usage, and retrieval latency
+(6000× faster than TransVPR), as well as outperforms the
+state-of-the-art methods by a large margin (ranks 1st on MSLS challenge
+leaderboard). Code and models will be released (and merged with SelaVPR)
+at https://github.com/Lu-Feng/SelaVPR.</p>
+</div>
+<div class="note primary"><h2
 id="neurips2025-towards-implicit-aggregation-robust-image-representation-for-place-recognition-in-the-transformer-era"><a
 href="">NeurIPS2025: Towards Implicit Aggregation: Robust Image
 Representation for Place Recognition in the Transformer Era</a></h2>
